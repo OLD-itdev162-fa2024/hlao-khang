@@ -36,7 +36,8 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpPost]
-    public ActionResult<WeatherForecast> Create(){
+    public ActionResult<WeatherForecast> Create()
+    {
         // View in your VS Code console - fyi
         Console.WriteLine($"Database path: {_context.DbPath}");
         Console.WriteLine("Insert a new WeatherForecast");
