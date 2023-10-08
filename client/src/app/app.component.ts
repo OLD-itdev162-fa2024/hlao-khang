@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'new title';
-  weatherForescasts: any;
+  weatherForecasts: any;
 
   constructor(private http: HttpClient) {}
   ngOnInit(): void {
     this.http.get('http://localhost:5297/weatherforecast').subscribe(
       (response) => {
-        this.weatherForescasts = response;
+        this.weatherForecasts = response;
       },
       (error) => {
         console.log(error);
