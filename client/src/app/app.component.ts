@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'new title';
-  weatherForecasts: any;
+  title = 'client';
+  posts: any;
 
   constructor(private http: HttpClient) {}
   ngOnInit(): void {
-    this.http.get('http://localhost:5297/weatherforecast').subscribe(
+    this.http.get('http://localhost:5297/api/posts').subscribe(
       (response) => {
-        this.weatherForecasts = response;
+        this.posts = response;
       },
       (error) => {
         console.log(error);
