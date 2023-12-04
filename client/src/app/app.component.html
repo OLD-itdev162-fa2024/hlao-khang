@@ -2,12 +2,21 @@
   <button
     mat-icon-button
     class="example-icon"
-    aria-lable="Example icon button with menu icon"
+    aria-lable="Example icon-button with home icon"
+    routerLink="/"
   >
-    <mat-icon>menu</mat-icon>
+    <mat-icon>home</mat-icon>
   </button>
   <span>{{ title }}</span>
   <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example=icon create-icon"
+    aria-label="Create a new post"
+    routerLink="/create"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
   <button
     mat-icon-button
     class="example-icon favorite-icon"

@@ -14,7 +14,12 @@ import { ViewPostComponent } from './view-post/view-post.component';
 import { CreatePostComponent } from './create-post/create-post.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ViewPostComponent, CreatePostComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    ViewPostComponent,
+    CreatePostComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
